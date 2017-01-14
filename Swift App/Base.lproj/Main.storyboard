@@ -27,6 +27,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLz-uw-R3B">
+                                <rect key="frame" x="137.5" y="196" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3Bc-fx-t5s"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE8-de-Mb3">
                                 <rect key="frame" x="154" y="111" width="67" height="30"/>
                                 <state key="normal" title="PUSH ME"/>
@@ -34,9 +43,22 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wLx-mN-dIG"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbz-F5-loY">
+                                <rect key="frame" x="137.5" y="257" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WNT-ME-EMv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fbz-F5-loY" firstAttribute="top" secondItem="NE8-de-Mb3" secondAttribute="bottom" constant="116" id="7kk-YN-KJP"/>
+                            <constraint firstItem="CLz-uw-R3B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Af-yL-tE3"/>
+                            <constraint firstItem="fbz-F5-loY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J5I-sd-EjF"/>
+                            <constraint firstItem="CLz-uw-R3B" firstAttribute="top" secondItem="NE8-de-Mb3" secondAttribute="bottom" constant="55" id="LI2-JW-C7A"/>
                             <constraint firstItem="NE8-de-Mb3" firstAttribute="top" secondItem="YEe-V6-eJw" secondAttribute="bottom" constant="50" id="Owe-19-vC3"/>
                             <constraint firstItem="YEe-V6-eJw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="PIV-Og-OVH"/>
                             <constraint firstItem="NE8-de-Mb3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dk8-Dw-t05"/>
@@ -45,11 +67,13 @@
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="YEe-V6-eJw" id="9wz-ja-uvX"/>
+                        <outlet property="text1" destination="CLz-uw-R3B" id="Bqb-8t-L16"/>
+                        <outlet property="text2" destination="fbz-F5-loY" id="A5a-vD-XDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650" y="-2379"/>
+            <point key="canvasLocation" x="-88.799999999999997" y="-2479.6101949025488"/>
         </scene>
     </scenes>
 </document>
